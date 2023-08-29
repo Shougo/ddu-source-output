@@ -30,7 +30,7 @@ export class Source extends BaseSource<Params> {
 
     return new ReadableStream({
       async start(controller) {
-        const items = output.split(/\n/).map((line, i) => {
+        const items = output.split(/\n/).slice(1).map((line, i) => {
           return {
             word: line,
             action: {
