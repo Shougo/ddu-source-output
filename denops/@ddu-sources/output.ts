@@ -1,15 +1,10 @@
-import {
-  type Context,
-  type Item,
-} from "jsr:@shougo/ddu-vim@~6.1.0/types";
-import {
-  BaseSource,
-} from "jsr:@shougo/ddu-vim@~6.1.0/source";
+import { type Context, type Item } from "jsr:@shougo/ddu-vim@~9.4.0/types";
+import { BaseSource } from "jsr:@shougo/ddu-vim@~9.4.0/source";
 
 import { type ActionData } from "jsr:@shougo/ddu-kind-word@~0.4.0";
 
 import type { Denops } from "jsr:@denops/core@~7.0.0";
-import * as fn from "jsr:@denops/std@~7.1.0/function";
+import * as fn from "jsr:@denops/std@~7.4.0/function";
 
 type Params = {
   command: string;
